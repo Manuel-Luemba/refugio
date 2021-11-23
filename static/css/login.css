@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#form_login {
+    background: #333333;
+    width: 360px;
+    border: 1px solid #4e4d4d;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: inset 0 0 10px #000;
+    margin: 100px auto;
+}
+#form_login  h1{
+   text-align: center;
+    color:#ffffff;
+    font-weight: normal;
+    font-size: 40pt;
+    margin: 30px 0px;
+    font-family: cursive;
+}
+#form_login input {
+    width: 280px;
+    height: 35px;
+    padding: 0px 10px;
+    margin: 10px 30px 10px;
+    color: #6d6d6d;
+    text-align: center;
+}
+#form_login button {
+    width: 305px;
+    margin: 20px 0px 30px 30px;
+    height: 50px;
+
+    background: #3c3c3c;
+    background: -moz-linear-gradient(top, #3c3c3c 0%, #2a2828 100%);
+    background: -webkit-gradient(linear, left top,left bottom, color-stop(0%,#3c3c3c), color-stop(100%,#2a2828));
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #2a2828 100%);
+    background: -o-linear-gradient(top, #3c3c3c 0%, #2a2828 100%);
+    background: -ms-linear-gradient(top, #8b8b8b 0%, #2a2828 100%);
+    background: linear-gradient(to bottom, #8b8b8b 0%, #2a2828 100%);
+
+
+    border: 1px solid #232323;
+    color: #fff;
+    box-shadow: 0px 2px 0px #000;
+    -moz-box-shadow: 0px 2px 0px #000;
+    -webkit-box-shadow: 0px 2px 0px #000;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+#form_login button:hover{
+    background: #3a3a3a;
+    cursor: pointer;
+}
+#form_login button:active{
+    background: #2a2828;
+    background: -moz-linear-gradient(top, #2a2828 0%, #3c3c3c 100%);
+    background: -webkit-gradient(linear, left top,left bottom, color-stop(0%,#2a2828), color-stop(100%,#3c3c3c));
+    background: -webkit-linear-gradient(top, #2a2828 0%, #3c3c3c 100%);
+    background: -o-linear-gradient(top, #2a2828 0%, #3c3c3c 100%);
+    background: -ms-linear-gradient(top, #2a2828 0%, #3c3c3c 100%);
+    background: linear-gradient(to bottom, #2a2828 0%, #3c3c3c 100%);
+}
+
+#olvide{
+    font-family: Verdana;
+    text-align: center;
+    color: #ffffff;
+    margin: 10px 80px 10px 80px ;
+    padding: 10px;
+}
+#regi{
+    color: #ffffff;
+    text-decoration: none;
+}
+

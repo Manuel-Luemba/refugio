@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    {% block extrastatic %}
+    {% endblock %}
+
+    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dataTables.bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dataTables.bootstrap.min.css' %}">
+    <title>{% block title %}App Mascoita {% endblock %}</title>
+</head>
+<body background="{% static 'img/banner.jpg' %}" >
+<div class="container">
+
+    {% block navbar %}
+        <div class="bs-docs-section clearfix">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bs-component">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                     <a class="navbar-brand" href="#"><i class="fa fa-home fa-fw fa-1x "></i>&nbsp; Sobre Nós</a>
+                                </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mascoitas <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="">Cadastrar</a></li>
+                                            <li><a href="">Listar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Adopções<span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="">Solicitar</a></li>
+                                            <li><a href="">Listar Pedidos</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="dropdown"><a href="http://codigofacilito.com" onclick="pageTracker._link(this.href); return false;">Lar de Mascoita</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Opções<span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="">Sair</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+
+
+    {% block content %}
+    <h4>    Bloco de conteudo     </h4>
+    {% endblock %}
+
+
+    {% block footer %}
+    {% endblock%}
+</div>
+     <script src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
+     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+     <script src="{% static 'js/jquery.dataTables.min.js' %}"></script>
+     <script src="{% static 'js/dataTables.bootstrap.min.js' %}"></script>
+     <script>
+         $(document).ready(function() {    $('#mydata').DataTable( {        "order": [[ 3, "desc" ]],      language: {        "decimal":        "",    "emptyTable":     "No hay datos",    "info":           "Mostrando _START_ a _END_ de _TOTAL_ registros",    "infoEmpty":      "Mostrando 0 a 0 de 0 registros",    "infoFiltered":   "(Filtro de _MAX_ total registros)",    "infoPostFix":    "",    "thousands":      ",",    "lengthMenu":     "Mostrar _MENU_ registros",    "loadingRecords": "Cargando...",    "processing":     "Procesando...",    "search":         "Buscar:",    "zeroRecords":    "No se encontraron coincidencias",    "paginate": {        "first":      "Primero",        "last":       "Ultimo",        "next":       "Próximo",        "previous":   "Anterior"    },    "aria": {        "sortAscending":  ": Activar orden de columna ascendente",        "sortDescending": ": Activar orden de columna desendente"    }      }    } );} );
+     </script>
+
+
+    {% block extrajs %}
+    {% endblock %}
+</body>
+</html>

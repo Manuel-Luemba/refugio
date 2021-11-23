@@ -1,0 +1,128 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+#cabeza{
+    width: 100%;
+}
+#navegacion{
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+#navegacion > ul{
+    list-style: none;
+}
+#navegacion ul{
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+#navegacion ul li{
+    display: table-cell;
+}
+/*Sub-menu*/
+#navegacion > ul > li:hover > ul{
+    display: block;
+    height: 100%;
+}
+#navegacion > ul > li > ul{
+    display: block;
+    position: relative;
+    background: #000;
+    left:0;
+    right: 0;
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+/*Fin del sub menu*/
+
+
+#navegacion > ul > li > ul {
+    display: none;
+}
+#navegacion >ul li a{
+  color: #ffffff;
+  display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#navegacion > ul > li > ul > li a:hover{
+    background:#5da5a2;
+}
+#navegacion > ul > li > a span{
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top:-55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#navegacion > ul > li > a span .fa{
+    display: block;
+    line-height: 60px;
+}
+#navegacion > ul > li > a:hover>span{
+   top:0px ;
+}
+/*Colores*/
+#navegacion ul li a .primero{
+    background: #0e5061;
+}
+#navegacion ul li a .segundo{
+    background: #5da5a2;
+}
+#navegacion ul li a .tercero{
+    background: #f25724;
+}
+#navegacion ul li a .cuarto{
+    background: #174459;
+}
+#navegacion ul li a .quinto{
+    background: #37a4d9;
+}
+/*El body de la pgina de inicio*/
+.cuerpo_inicio {
+    width: 900px;
+    min-height: 700px;
+    border: #ccc solid 1px;
+    margin: 20px auto 0px auto;
+    overflow: auto;
+}
+.central{
+    width: 687px;
+    height: 500px;
+    border: #999 solid 1px;
+    margin-bottom: 5px;
+    margin: 5px auto;
+    float: left;
+}
+.lateral{
+    width: 200px;
+    height: 500px;
+    border: #999 solid 1px;
+    float: left;
+    margin: 5px auto;
+    margin-left: 5px;
+}

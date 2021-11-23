@@ -1,0 +1,16 @@
+.eliminar {
+    background-image: url(../imagenes/fantasy-3146946__340.jpg);
+    border-width: 2px;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 30rem;
+}
+
+#text_eliminar{
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+     color:darkblue;
+
+    font-size: 30px;
+}
